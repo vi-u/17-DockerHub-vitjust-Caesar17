@@ -26,7 +26,7 @@
     http://localhost:56733
     
 ******
-Finally your are ready to push your application to Docker Hub using your account.
+Finally you are ready to push your application to Docker Hub using your account.
 
 #First, commit changes of the final version of the project "16-Docker-Flask-Caesar" which is called "docker.test16" to new image "vitjust/caesar17" where "vitjust" is your Docker Hub username
 
@@ -39,10 +39,12 @@ To push your image, first log into Docker Hub.
 
 #If you did not name commited file with first username/ than you need to do next:
 
-#Note: If your Docker registry username is different from the local username you used to create the image, you will have to tag your image with your registry username. For the example given in the last step, you would type:
+#Note: If your Docker registry username is different from the local username you used to create the image, you will have to tag your image with your registry username. 
 
 
-    docker tag sammy/ubuntu-nodejs docker-registry-username/ubuntu-nodejs
+    docker tag sammy/caesar17 docker-registry-username/caesar17
+    
+#To make things easier just use the same name for your local image and your username with DockerHyb.
 
 #Then you may push your own image using:
 
@@ -54,7 +56,11 @@ To push your image, first log into Docker Hub.
     
 #After pushing an image to a registry, it should be listed on your account’s dashboard.
     
-#To share your tool with your friends and customers just 
+#To try this tool sign in to Docker hub and pull the image:
+
+    docker pull vitjust/caesar17
+
+
 
 ****
 More details about interactions wih Docker Hub are at 
