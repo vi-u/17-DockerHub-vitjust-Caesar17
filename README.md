@@ -28,9 +28,39 @@
 ******
 Finally your are ready to push your application to Docker Hub using your account.
 
-#First, commit changes of the final version of the project "16-Docker-Flask-Caesar" which is called "docker.test16" to new image "vit/caesar16"
+#First, commit changes of the final version of the project "16-Docker-Flask-Caesar" which is called "docker.test16" to new image "vitjust/caesar17" where "vitjust" is your Docker Hub username
 
-    docker commit -m "added Caesar Flask app" -a "vit" docker.test16 vit/caesar16
+    docker commit -m "added Caesar Flask app" -a "vitjust" docker.test16 vitjust/caesar17
 
 #Second, push it to Docker Hub for other people to be able to use your tool.
+To push your image, first log into Docker Hub.
+
+    docker login -u docker-registry-username
+
+#If you did not name commited file with first username/ than you need to do next:
+
+#Note: If your Docker registry username is different from the local username you used to create the image, you will have to tag your image with your registry username. For the example given in the last step, you would type:
+
+
+    docker tag sammy/ubuntu-nodejs docker-registry-username/ubuntu-nodejs
+
+#Then you may push your own image using:
+
+    docker push docker-registry-username/docker-image-name
+
+#in our case:
+
+    docker push vitjust/caesar17
+    
+#After pushing an image to a registry, it should be listed on your account’s dashboard.
+    
+#To share your tool with your friends and customers just 
+
+****
+More details about interactions wih Docker Hub are at 
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
+
+
+
+
 
