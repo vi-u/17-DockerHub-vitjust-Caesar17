@@ -1,5 +1,5 @@
 # 17-Updating-Application
->>>> Configure touch-reload to make these changes without needing to restart the Docker container.
+>>>> Configure touch-reload to make these changes without needing to restart the Docker container. Commiting to vitjust/caesar17 and push to Docker Hub.
 
     sudo nano uwsgi.ini
 
