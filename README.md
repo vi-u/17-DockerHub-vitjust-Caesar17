@@ -1,5 +1,8 @@
 # 17-DockerHub-vitjust-Caesar17
->>>> Configure touch-reload to make these changes without needing to restart the Docker container. Commiting to vitjust/caesar17 and push to Docker Hub.
+>>>> How to push your docker app to DockerHub? 
+Tip 1. Use your DockerHub name such as "vitjust" and save your Docker image as vitjust/<image name>
+Tip 2. Configure touch-reload to make these changes without needing to restart the Docker container. 
+Commiting to vitjust/caesar17 and push to Docker Hub.
 
     sudo nano uwsgi.ini
 
